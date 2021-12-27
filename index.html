@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>Project tracking intro component</title>
+  </head>
+  <body class="p-4">
+    <header>
+      <nav class="flex justify-between items-center">
+        <div class="nav-logo cursor-pointer">
+          <img src="images/logo.svg" alt="logo" />
+        </div>
+        <div class="nav-menu">
+          <div class="hamburger-menu-icon"></div>
+          <ul>
+            <li>
+              <a href="#/"> Product </a>
+            </li>
+            <li>
+              <a href="#/"> Features </a>
+            </li>
+            <li>
+              <a href="#/"> Pricing </a>
+            </li>
+            <li class="login-link">
+              <a href="#/"> Login </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="text-left flex flex-col gap-4">
+      <div class="bg-img-main">
+        <img src="images/illustration-devices.svg" alt="" />
+        <div class="bg-color"></div>
+      </div>
+      <h2 class="uppercase"><span class="accent">New</span> Monograph Dashboard</h2>
+      <h1 class="uppercase">Powerful insights into your team</h1>
+      <p>Project planning and time tracking for agile teams</p>
+      <div class="btn-wrapper uppercase flex gap-3 flex items-center">
+        <a class="btn" href="#/"> Schedule a demo </a>
+        to see a preview
+      </div>
+    </main>
+    <footer class="mt-20">
+      <p class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          rel="noreferrer noopener"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dmitriy</a>
+      </p>
+    </footer>
+  </body>
+</html>
