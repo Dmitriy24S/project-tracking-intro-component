@@ -15,6 +15,9 @@ body {
   padding: 1rem;
 }
 /* header */
+nav {
+  justify-content: space-between;
+}
 .hamburger-menu-icon {
   cursor: pointer;
   padding: 1rem;
@@ -151,30 +154,20 @@ p {
 }
 /* desktop */
 @media (min-width: 900px) {
-  .bg-img-main {
-    margin: 0;
-    width: 50vw;
-  }
-  section {
-    width: 50%;
-  }
-  main {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-  }
   body {
     min-height: 100vh;
     padding: 3rem 5rem;
   }
-  .bg-img-main img {
-    min-width: 600px;
-    min-height: 400px;
-    position: absolute;
-    margin: 0;
-    right: 0;
-    left: 49vw;
-    top: 200px;
+  /* header */
+  nav {
+    justify-content: flex-end;
+  }
+  .nav-menu {
+    width: 50%;
+  }
+  .nav-logo {
+    width: 40vw;
+    padding: 0 1rem;
   }
   .hamburger-menu-icon {
     display: none;
@@ -187,12 +180,50 @@ p {
     background-color: transparent;
     box-shadow: none;
     position: relative;
-    padding: 0;
+    padding: 0 1rem;
     top: 0;
+    gap: 2rem;
+    width: auto;
+  }
+  .login-link::before {
+    border-radius: 50%;
+    background-color: hsl(230, 11%, 40%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -40px;
+    transform: translate(0px, -50%);
+    opacity: 0.5;
+    height: 8px;
+    width: 8px;
   }
   .login-link {
+    position: relative;
     padding-top: 0;
     border-top: none;
+    margin-left: 4rem;
+  }
+  /* main */
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  section {
+    width: 40vw;
+  }
+  .bg-img-main {
+    margin: 0;
+    width: 50%;
+  }
+  .bg-img-main img {
+    min-width: 600px;
+    min-height: 400px;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    left: 49vw;
+    top: 200px;
   }
   .btn-wrapper {
     margin-top: 2rem;
